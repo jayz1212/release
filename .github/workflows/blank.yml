@@ -9,11 +9,7 @@ jobs:
   get-username-email:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Display Default Username
-      run: git config user.name
-
-    - name: Display Default Email
-      run: git config user.email
+    - name: Display Default Username and Email
+      run: |
+        echo "Default Username: ${{ github.actor }}"
+        echo "Default Email: ${{ github.actor }}@users.noreply.github.com"
