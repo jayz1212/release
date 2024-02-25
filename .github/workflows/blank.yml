@@ -1,4 +1,4 @@
-name: Get Default Username and Email
+name: Get Default Username and Emaild
 
 on:
   push:
