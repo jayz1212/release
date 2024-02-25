@@ -1,0 +1,16 @@
+name: Get Default Username and Email
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  get-username-email:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Display Default Username
+      run: echo "Default Username: ${{ github.actor }}"
+
+    - name: Display Default Email
+      run: echo "Default Email: ${{ github.actor }}@users.noreply.github.com"
